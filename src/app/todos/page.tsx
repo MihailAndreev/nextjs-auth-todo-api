@@ -111,11 +111,13 @@ export default function TodosPage() {
       }
 
       setNewTitle("");
-      if (data.item) {
-        setItems((prev) => [data.item, ...prev]);
-      } else {
+      const newItem = data.item;
+      if (!newItem) {
         void loadTodos();
+        return;
       }
+
+      setItems((prev) => [newItem, ...prev]);
     } catch {
       setMessage("Failed to add todo.");
     }
@@ -139,9 +141,14 @@ export default function TodosPage() {
         return;
       }
 
-      if (data.item) {
-        setItems((prev) => prev.map((todo) => (todo.id === item.id ? data.item : todo)));
+      const updatedItem = data.item;
+      if (!updatedItem) {
+        return;
       }
+
+      setItems((prev) =>
+        prev.map((todo) => (todo.id === item.id ? updatedItem : todo))
+      );
     } catch {
       setMessage("Failed to update todo.");
     }
@@ -181,9 +188,14 @@ export default function TodosPage() {
         return;
       }
 
-      if (data.item) {
-        setItems((prev) => prev.map((todo) => (todo.id === item.id ? data.item : todo)));
+      const updatedItem = data.item;
+      if (!updatedItem) {
+        return;
       }
+
+      setItems((prev) =>
+        prev.map((todo) => (todo.id === item.id ? updatedItem : todo))
+      );
       cancelEdit();
     } catch {
       setMessage("Failed to update todo.");
