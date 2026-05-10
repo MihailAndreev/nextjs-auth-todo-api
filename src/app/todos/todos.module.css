@@ -1,0 +1,167 @@
+.page {
+  min-height: 100vh;
+  padding: 48px 24px 64px;
+  font-family: var(--font-geist-sans);
+  background: linear-gradient(135deg, #f1f6ff 0%, #fff5eb 60%, #f7f1eb 100%);
+  color: #1b1b1b;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 36px;
+  box-shadow: 0 28px 70px rgba(20, 12, 4, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.headerActions {
+  display: flex;
+  gap: 12px;
+}
+
+.headerActions button,
+.headerActions a {
+  border: 1px solid #d6d1cb;
+  background: #ffffff;
+  color: #1b1b1b;
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.addRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.addRow input {
+  flex: 1;
+  min-width: 220px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #dedad4;
+  font-size: 16px;
+}
+
+.addRow button {
+  border: none;
+  background: #1f1f1f;
+  color: #ffffff;
+  padding: 12px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 12px 10px;
+  border-bottom: 1px solid #eee6dd;
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+.table th {
+  color: #6b5d51;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.titleInput {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #dedad4;
+  font-size: 15px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actionButton {
+  border: 1px solid #d6d1cb;
+  background: #ffffff;
+  padding: 6px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.danger {
+  border-color: #f1b2a6;
+  color: #b13320;
+}
+
+.muted {
+  color: #6c5e53;
+  font-size: 14px;
+}
+
+.message {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #f6f0e9;
+  color: #7a3b10;
+  font-size: 14px;
+}
+
+.empty {
+  padding: 16px 0;
+  color: #6c5e53;
+}
+
+@media (max-width: 720px) {
+  .container {
+    padding: 28px 20px;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table tr {
+    display: grid;
+    gap: 8px;
+    padding: 16px 0;
+    border-bottom: 1px solid #eee6dd;
+  }
+
+  .table td {
+    border-bottom: none;
+    padding: 0;
+  }
+
+  .actions {
+    flex-wrap: wrap;
+  }
+}

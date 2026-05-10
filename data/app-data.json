@@ -1,0 +1,73 @@
+{
+  "users": [
+    {
+      "username": "ivan",
+      "passwordHash": "$2b$10$a3opVkVwHbLi.d0j25CT9OoM7hsFi/j8dXF.t4vfW8Q42be/F6dES",
+      "nextTodoId": 5,
+      "todos": [
+        {
+          "id": 1,
+          "title": "watch the WRC Portugal",
+          "isCompleted": false,
+          "createdDate": "2026-05-09T08:05:53.867Z"
+        },
+        {
+          "id": 2,
+          "title": "enjoy the Giro D'Italia",
+          "isCompleted": false,
+          "createdDate": "2026-05-09T08:07:42.404Z"
+        },
+        {
+          "id": 4,
+          "title": "watch the WRC Japan",
+          "isCompleted": false,
+          "createdDate": "2026-05-09T08:20:05.046Z"
+        }
+      ]
+    },
+    {
+      "username": "pesho",
+      "passwordHash": "$2b$10$KkJkrDJXsz/sElkN6k5iPeAKfU4fIU9B2TmlbzDH.E4meYowiOr5S",
+      "nextTodoId": 1,
+      "todos": []
+    },
+    {
+      "username": "tosho",
+      "passwordHash": "$2b$10$HYaPEg7vI4M9L4uMDg6Dhu4Jyso8bEiXIg9ivYx/uiZizurTC7AXy",
+      "nextTodoId": 1,
+      "todos": []
+    },
+    {
+      "username": "stefan",
+      "passwordHash": "$2b$10$/vxJP8u.hS5KtP8tVohTVepnQpKcx97bMiqRzM9tfg3ijEwm6KWqy",
+      "nextTodoId": 4,
+      "todos": [
+        {
+          "id": 2,
+          "title": "LEARN BAKC-END DEV TOOLS",
+          "isCompleted": false,
+          "createdDate": "2026-05-10T06:34:07.510Z"
+        },
+        {
+          "id": 3,
+          "title": "Shopping at the foodstore",
+          "isCompleted": false,
+          "createdDate": "2026-05-10T07:03:19.831Z"
+        }
+      ]
+    },
+    {
+      "username": "penka",
+      "passwordHash": "$2b$10$74YUVaYJyQOY802LdgVVZuCrAynAzrZUUbYieI/crTD74aMYcnZMC",
+      "nextTodoId": 2,
+      "todos": [
+        {
+          "id": 1,
+          "title": "go to sleep",
+          "isCompleted": false,
+          "createdDate": "2026-05-10T07:06:26.622Z"
+        }
+      ]
+    }
+  ]
+}
